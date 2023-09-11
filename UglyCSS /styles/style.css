@@ -1,10 +1,46 @@
 body {
   color: black;
+  background-image: repeating-conic-gradient(purple 10%, blue 20%);
+  }
+h1 {
+  color: white;
+  font-family: 'Holtwood One SC', serif; font-size:100px;
+}
+h2 {color:#7ed8a7; font-family: 'Arbutus', serif; font-size:80px;
 }
 
-h1 {
-  color: green;
-  font-family: Lucida Sans;
+p {
+  color:greenyellow; font-weight: 400; font-family: 'Peralta', serif; font-size:30px
 }
-background 
-{ color: purple}
+
+
+
+.column {
+  background-color:   display: flex; flex-direction: column; border: 5px; border-color: aqua;
+}
+
+
+.row {  display: flex; flex-direction:row; flex: space-between; justify-content: flex-start; align-items:flex-start;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%; 
+  left: 30%; 
+  transform: translate(-50%, -50%); 
+  color: rgb(255, 0, 251); 
+  padding: 10px 20px; 
+  font-size: 100px; 
+  font-family: 'Arbutus', serif;
+  text-align: center;
