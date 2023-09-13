@@ -1,26 +1,48 @@
 body {
   color: black;
-  background-image: repeating-conic-gradient(purple 10%, blue 20%);
+  background-image: repeating-conic-gradient(purple 10%,  pink 5%,  blue 20%);
   }
-h1 {
-  color: white;
-  font-family: 'Holtwood One SC', serif; font-size:100px;
+h1 { 
+  padding-right: 50px;
+  padding-left: 50px;
+  color: yellow; 
+  font-family: 'Holtwood One SC', serif; 
+  font-size:100px;
+  line-height: 120px; 
+  text-decoration:underline; 50px;
+  text-decoration-color: aqua;
+  
 }
-h2 {color:#7ed8a7; font-family: 'Arbutus', serif; font-size:80px;
+h2 {
+  color:#7ed8a7; 
+  padding-left:100px;
+  font-family: 'Arbutus', serif; 
+  font-size:60px;
+  text-shadow: red 5px 10px;
 }
+
+h3 {
+  color: plum;
+  font-family:cursive;
+  font-size: 40px;
+  text-shadow:yellow 1px 3px;
+}
+
 
 p {
-  color:greenyellow; font-weight: 400; font-family: 'Peralta', serif; font-size:30px
+  color:greenyellow; font-weight: 400; font-family: 'Peralta', serif; font-size:25px
 }
 
-
+.text-div { width:500px;}
 
 .column {
-  background-color:   display: flex; flex-direction: column; border: 5px; border-color: aqua;
+padding-left: 100px; resize: horizontal; vertical-align: text-top; display: flex; flex-direction: column; border: 5px; border-color: aqua;
 }
 
 
-.row {  display: flex; flex-direction:row; flex: space-between; justify-content: flex-start; align-items:flex-start;
+.row {  vertical-align: text-top;  
+
+  display: flex; flex-direction:row; flex: space-between; justify-content: flex-start; align-items:flex-start;
 }
 
 .image-container {
@@ -43,4 +65,48 @@ p {
   padding: 10px 20px; 
   font-size: 100px; 
   font-family: 'Arbutus', serif;
-  text-align: center;
+  text-align: center;}
+
+
+  .wrapper {
+    position: relative;
+  }
+  
+  .bottom-box {
+    position: relative;
+    z-index: 1;
+ 
+    height: 8em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+  .top-box {
+    position: absolute;
+    z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+    width: 80%;
+    left: 80%;
+    margin-bottom: 1em;
+    height: 3em; 
+    top:100px;
+  }
+  .middle-box {
+    position: absolute;
+    z-index: 2; /* put .green-box above .dashed-box */
+
+    width: 20%;
+    left: 75%;
+    top: -50px;
+ 
+  }
+  
+  .top-box2 {
+    position: absolute;
+    z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+    width: 80%;
+ 
+    margin-bottom: 1em;
+    height: 3em; 
+left: 1100px;
+    top:200px;
+  }
+   
